@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <!-- TODO - add favicon -->
+  <title>Zyclyx - Experienced in Future World</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!--Bootstrap font aswome CDN -->
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/job-preview.css" />
+  <style>
+  .error{
+      color:red;
+      font-size: 10px;
+    }  
+  
+  </style>
+</head>
+<body class="text-center">
+  <div>
+    <!-- 
+      ====== Navbar ======
+    -->
+    <header>
+      <div id="navbar"></div>
+    </header>
+    <!-- 
+      ====== END Navbar ======
+    --> 
+    <section class="container-fluid header-img overlay">
+        <h1 class="header-title">Want to work with us?</h1>
+        <nav class="text-center">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Job Preview</li>
+            </ol>
+        </nav>
+    </section>
+    <!--end of section-->
+    <section class="job-preview py-4">
+
+      <h4 class="title-2" id="jobtitle"></h4>
+
+      <!-- <h5 class="py-2 title-1 p-4" id="jobtitle">Software Engineering Manager</h5> -->
+      <div class="container text-left">
+
+        <div class="row justify-content-between py-4">
+          <!-- JOB DESCRIPTION -->
+          <div class="col-12 col-lg-8 order-2 order-sm-1">
+            <article class="text-2">
+
+              <h5 class="py-2 title-3" >Description</h5>
+               <p id="description">
+                
+              </p>
+              <!-- Requirements -->
+              <h5 class="py-2 title-3">Requirements</h5>
+              <ul class="text-2 job-desc-list" id="qualifications">
+              </ul>
+               <!-- Responsibilities  -->
+              <h5 class="py-2 title-3">Responsibilities</h5>
+              <ul class="text-2 job-desc-list" id="responsibilities">
+                
+              </ul>
+              
+
+            </article>             
+          </div>
+          <div class="col-12 col-lg-4 order-1 order-sm-2">
+              <div class="m-4 p-2">               
+                  <a href="#applicationForm" class="btn btn-primary btn-block">Apply Now</a>               
+              </div>
+              <div class="card">
+                <div class="card-header d-flex justify-content-between">
+                  <div>
+                    <span class="text-1">Job Details</span>
+                  </div>
+                </div>
+                <div class="card-body text-3">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <div class="d-flex justify-content-between text-2 capitalize" >
+                        <span>Location</span>
+                        <span id="location" class="font-weight-bolder text-capitalize"></span>
+
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="d-flex justify-content-between capitalize">
+                        <span>Job Type</span>
+                        <span id='jobtype' class="font-weight-bolder text-capitalize"></span>
+
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="d-flex justify-content-between capitalize">
+                        <span>Date Posted</span>
+                        <span id="startDate" class="font-weight-bolder text-capitalize"></span>
+
+                      </div>
+                    </li> 
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between capitalize">
+                          <div>Closing Date</div>
+                          <span id="closeDate" class="font-weight-bolder text-capitalize"></span>
+
+                        </div>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- END - JOB Details card-->
+  
+              <!-- Address Card -->
+              <div class="card my-5 text-2 address-card">
+                <div class="card-header d-flex justify-content-between">
+                  <div>
+                    <span class="text-1">Need Help?</span>
+                  </div>
+                </div>
+                <div class="card-body address">
+                  <p class="d-flex"><i class="fa fa-map-marker m-3"></i> <span>3rd Floor, Pearl Enclave,<br /> Road No.
+                      5,Banjara Hills, Hyderabad, Telangana, India</span></p>
+                  <p><i class="fa fa-envelope m-3"></i>info@zyclyx.com</p>
+                  <p><i class="fa fa-phone m-3"></i>(+91) 40 2354 9363</p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!--end of row-->
+      </div>
+      <!-- JOB APPLICATION FORM -->        
+      <div class="container row mx-auto pt-5" id="applicationForm">        
+        <div class="col-12 col-md-10 mx-auto">
+            <h3 class="title-2 text-center">Apply for this Job</h3>
+          <span id="errorAlert"></span>
+          <form id="jobApplication" class="needs-validation mb-3" novalidate="">
+                <div class="row pt-5">
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="firstname" class="text-2">FirstName:&nbsp;<span
+                                    class="text-danger">*</span></label>
+                            <input class="form-control" name="firstname" type="text" id="firstname" placeholder="" required="">
+                           <span class="error" id="error1"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="lastname" class="text-2">LastName:&nbsp;<span
+                                    class="text-danger">*</span></label>
+                            <input class="form-control" name="lastname" type="text" id="lastname" placeholder="" required="">
+                            <span class="error" id="error2"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="email" class="text-2">Email&nbsp;<span
+                                    class="text-danger">*</span></label>
+                            <input class="form-control" name="email" type="text" id="email" placeholder="" required="" autocomplete="off">
+                            <span class="error" id="error3"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="phone" class="text-2">Phone Number</label>
+                            <input class="form-control" name="phone" type="text" id="phone" placeholder="">
+                            <span class="error" id="error4"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                          <p class="text-left mb-2 text-2">Resume <span class="text-danger">*</span></p>
+                          <div class="custom-file">                          
+                              <input type="file" name="resume" class="custom-file-input" id="validatedCustomFile" required>                             
+                              <label class="custom-file-label" for="validatedCustomFile">Choose File...</label>
+                              <span class="error" id="error5"></span>
+                            </div>
+                      </div>                                              
+                    </div>
+
+                    <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="message" class="text-2">Message:&nbsp;<span class="text-danger">*</span></label>
+                        <textarea class="form-control" name="message" id="message" rows="4"
+                            placeholder="Where do you see yourself in years?" required=""></textarea>
+                            <span class="error" id="error6"></span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <button id="submitApplicationButton" class="btn btn-primary btn-shadow-2 pt-2 mt-2" type="submit">
+                   <span id="btnText">Submit Application <i class="ml-2 far fa-paper-plane"></i></span> 
+                   <span id="btnSpinner" class="spinner-border spinner-border-sm ml-2" role="status"
+                   aria-hidden="true"></span>
+                </button>
+            </form>
+        </div>
+      </div>
+
+      <!-- Contact form Modal -->
+      <div class="modal" tabindex="-1" role="dialog" id="JobApplicationModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">                             
+            <div class="modal-body">
+              <p>All The Best, <span id="contactName"></span></p>
+              <p>We Recieved your application!</p>                               
+            </div>
+            <div class="modal-footer">                                     
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>                            
+          </div>
+        </div>
+      </div>
+     <!-- END - contact form modal -->
+       <!-- END - JOB APPLICATION FORM -->
+    </section>
+     
+    <div id="footer"></div>
+  </div>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+  <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>
+  <script src="./js/jobpreview.js"></script>
+  <script>
+    $(function () {
+      $("#navbar").load("navbar.html");
+      $("#footer").load("footer.html");
+    });
+  </script>
+ 
+</body>
+
+</html>
