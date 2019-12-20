@@ -5,17 +5,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
-  <meta name="author" content="" />
-  <!-- TODO - add favicon -->
-  <title>Zyclyx - Experienced in Future World</title>
-  <!-- Bootstrap core CSS -->
+  <meta name="author" content="" />   
+  <title>Cloud Technologies - Zyclyx</title>   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <!-- Custom styles -->   
-  <link rel="stylesheet" herf="./css/main.css">
-  <link rel="stylesheet" href="./css/layout.css">
-  <link rel="stylesheet" href="./css/Cloud.css">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" /> 
+  <link rel="stylesheet" href="./css/layout.css">   
   <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <style>
+  .header-img{    
+    background-image:url("./images/background/cloud.jpg");       
+} 
+  </style>
 </head>
 
 <body>
@@ -23,9 +24,66 @@
     <!-- 
       ==== Navbar ====
     -->
-    <header>
-      <div id="navbar"></div>
-    </header>
+    <header class="main-navbar">
+      <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-dark site-navbar navbar-inner animated fadeInDown delay-1s" id="navbarMaster">             
+              <a class="navbar-brand ml-md-4" href="./index.html">
+                <img src="./images/logo/logo-black-sm.png" alt="Zyclyx Logo" id="navbarLogo">
+              </a>
+              <button class="navbar-toggler hamburger hamburger--squeeze is-active" type="button" data-toggle="collapse" data-target="#navbar-master"
+                aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">                  
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>         
+              </button>
+              <div class="collapse navbar-collapse" id="navbar-master">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
+                  <!--  home -->
+                  <li class="nav-item active mx-2 py-3">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+        
+                  <!-- services -->
+                  <li class="nav-item dropdown mx-2 py-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuServices" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Services
+                    </a>
+                    <div class="dropdown-menu animated pulse faster" aria-labelledby="dropdownMenuServices">
+                      <a class="dropdown-item my-1 py-1" href="./AI.html">Artificial Intelligence</a>
+                      <a class="dropdown-item my-1 py-1" href="./RPA.html">Robotic Process Automation</a>
+                      <a class="dropdown-item my-1 py-1" href="./Blockchain.html">BlockChain</a>
+                      <a class="dropdown-item my-1 py-1" href="./IoT.html">Internet Of Things</a>
+                      <a class="dropdown-item my-1 py-1" href="./Application-Development.html">Application Development</a>
+                      <a class="dropdown-item my-1 py-1" href="./Digital-Marketing.html">Digital Marketing</a>
+                      <a class="dropdown-item my-1 py-1" href="./Cyber-security-services.html">Cyber Security</a>
+                      <a class="dropdown-item my-1 py-1" href="./Bigdata.html">Big Data</a>
+                    </div>
+                  </li>
+        
+                  <!-- About us -->
+                  <li class="nav-item dropdown mx-2 py-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuAbout" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      About us
+                    </a>
+                    <div class="dropdown-menu animated pulse faster" aria-labelledby="navbarDropdownMenuAbout">
+                      <a class="dropdown-item my-1 py-1" href="./why-zyclyx.html">Why ZYCLYX</a>
+                      <a class="dropdown-item my-1 py-1" href="./aboutus.html">About Us</a>
+                    </div>
+                  </li>
+        
+                  <!-- careers -->
+                  <li class="nav-item mx-2 py-3">
+                    <a class="nav-link" href="./careers.html">Careers</a>
+                  </li>
+                  <!-- contact us -->
+                  <li class="nav-item mx-2 py-3">
+                    <a class="nav-link" href="./contactus.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+  </header>
     <!-- 
     ==== END Navbar ====
     -->
@@ -100,7 +158,7 @@
             data-aos-duration="1000">
             <div class="card-body shadow-sm">            
               <img src="./images/icons/blockchain_capability_1.svg" alt="supply chain">
-              <h3 class="title-2 py-3">BlockChain for supply chain</h3>
+              <h3 class="title-3 py-3">BlockChain for supply chain</h3>
               <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repudiandae iure
                 perspiciatis
                 dolor libero, pariatur atque ratione distinctio sapiente blanditiis cupiditate eum eaque, iusto
@@ -113,7 +171,7 @@
             data-aos-duration="1000">
             <div class="card-body shadow-sm">
                 <img src="./images/icons/blockchain_capability_2.svg" alt="blockchain security">
-                <h3 class="title-2 py-3">BlockChain security</h3>
+                <h3 class="title-3 py-3">BlockChain security</h3>
                 <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repudiandae iure
                   perspiciatis
                   dolor libero, pariatur atque ratione distinctio sapiente blanditiis cupiditate eum eaque, iusto
@@ -126,7 +184,7 @@
             data-aos-duration="1000">
             <div class="card-body shadow-sm">
                 <img src="./images/icons/blockchain_capability_3.svg" alt="digital identity">
-                <h3 class="title-2 py-3">BlockChain for digital identity</h3>
+                <h3 class="title-3 py-3">BlockChain for digital identity</h3>
                 <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repudiandae iure
                   perspiciatis
                   dolor libero, pariatur atque ratione distinctio sapiente blanditiis cupiditate eum eaque, iusto
@@ -159,7 +217,7 @@
                     <img src="./images/icons/blockchain_solution_1.svg" alt="smart contracts">              
                     </div>
                     <div class="card-content px-3">
-                      <h3 class="title-2 py-3">Smart Contracts</h3>
+                      <h3 class="title-3 py-3">Smart Contracts</h3>
                       <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quas ab similique maiores! Corporis quis maiores atque officiis saepe perferendis ipsa perspiciatis placeat eius reprehenderit, quasi error, molestiae quod exercitationem.</p>
                     </div>
              </div>
@@ -172,7 +230,7 @@
                     <img src="./images/icons/blockchain_solution_2.svg" alt="distributed ledgers">                
                     </div>
                     <div class="card-content px-3">
-                      <h3 class="title-2 py-3">Distributed Ledgers</h3>
+                      <h3 class="title-3 py-3">Distributed Ledgers</h3>
                       <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quas ab similique maiores! Corporis quis maiores atque officiis saepe perferendis ipsa perspiciatis placeat eius reprehenderit, quasi error, molestiae quod exercitationem.</p>
                     </div>    
             </div>    
@@ -185,7 +243,7 @@
                     <img src="./images/icons/blockchain_solution_3.svg" alt="crypto Currency">                
                     </div>
                     <div class="card-content px-3">
-                      <h3 class="title-2 py-3">Crypto Currency</h3>
+                      <h3 class="title-3 py-3">Crypto Currency</h3>
                       <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quas ab similique maiores! Corporis quis maiores atque officiis saepe perferendis ipsa perspiciatis placeat eius reprehenderit, quasi error, molestiae quod exercitationem.</p>
                     </div>
                   </div>
@@ -207,7 +265,7 @@
       <p class="title-caption">Share your ideas with us and we do our best to turn your ideas into reality</p>
       </div> 
        <p class="text-center mt-4 mb-0">
-        <a href="./contactus.html" class="btn btn-outline-primary btn-md btn-shadow-2">Get In Touch</a>
+        <a href="./contactus.html" class="btn btn-outline-primary btn-md btn-shadow-primary">Get In Touch</a>
       </p>
   
     </section>     
@@ -216,6 +274,48 @@
       -->
     <!-- Footer  -->
     <div id="footer"></div>
+
+    <!-- Chat Bot -->
+    <div class="btn btn-rounded text-center bot" id="chat" onclick="show(1)">
+        <i class="fab fa-rocketchat"></i>
+    </div>
+    
+    <div id="box1" class="chat-bot">
+        <div class="card shadow" id="bot">
+            <div id="close" class="card-header d-flex justify-content-between">Zybot
+                <button type="button" class="btn close" aria-label="Close" onclick="show(0)">
+                        <i class="fas fa-times"></i>
+                </button>
+            </div>
+      
+            <div class="card-body chatBot" id="scroll">
+                <div class="reply-messages" id="botMessages">
+      
+                    <p id="botReplay">Hey I'm Zybot ! </p>
+                    <!-- <p id="useTime"></p> -->
+      
+                    <!-- <p id="userReplay">Hi </p> -->
+                    <!-- <p id="useTime"></p>-->
+      
+                </div>
+            </div>
+            <div class="card-footer p-0 bottom-fixed">
+                <form id="bot-form">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="userText" placeholder="Type a Message..."
+                        aria-label="Recipient's username" aria-describedby="basic-addon2" autocomplete="off">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">
+                            <button type="submit"class="btn sendBtn">
+                                <i class="fas fa-paper-plane text-white"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+               </form>
+            </div>
+        </div>
+      </div>
   </div>
   <!-- Footer End -->
   <!-- Bootstrap core JavaScript
@@ -233,6 +333,7 @@
     crossorigin="anonymous">
     </script>
      <script src="./js/vendor/aos.js"></script>
+     <script src="./js/chatBot.js"></script>
   <script>
     $(function () {
       $("#navbar").load("navbar.html");
