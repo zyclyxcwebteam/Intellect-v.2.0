@@ -12,7 +12,7 @@ border: none !important;
 }
 .why-choose-cards .card-body{
     background-color: #f3f7fa;
-    border: 1px solid rgba(33, 200, 122,0.5);
+    border: 1px solid hsl(342, 68%, 73%);
     border-radius: 0.6rem;
 }
 .why-choose-cards .card-3,.why-choose-cards .card-4{
@@ -32,10 +32,10 @@ border: none !important;
   .great-at-cards .card-body {
     margin: 0.8rem;
     border-radius: 0.6rem;
-    border: 1px solid rgba(0, 123, 255, 0.3);
+    border: 1px solid rgba(141, 27, 61,0.1);
   }
   .heading-blue{
-    color: #222da5;
+    color: #8d1b3d;
   }
 
 /* 

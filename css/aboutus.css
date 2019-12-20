@@ -7,11 +7,11 @@
 }
 .mission-icon,
 .vission-icon {
-  box-shadow:inset 0 0 0 1px hsl(16, 100%, 70%);
+  box-shadow:inset 0 0 0 1px hsl(342, 68%, 33%);
   background: #fff;
 }
 .mission-icon svg,.vission-icon svg{
-  fill: #ff4500;
+  fill: #8d1b3d;
   transition: all .5s ease-in-out;
 -webkit-transition: all .5s ease-in-out;
 -moz-transition: all .5s ease-in-out;
@@ -19,7 +19,7 @@
 -o-transition: all .5s ease-in-out;
 }
  .mission:hover .mission-icon,.vission:hover .vission-icon{   
-  box-shadow: inset 0 0 0 70px #ff4500;
+  box-shadow: inset 0 0 0 70px #8d1b3d;
   transition: all .5s ease-in-out;
 }
  
@@ -52,7 +52,7 @@
 .we-do-card .icon:before {
   position: absolute;
   content: "";
-  color: #3396ff;
+  color: #8d1b3d;
   font-size: 1.6rem;
   left: 10px;
   top: 5px;

@@ -2,7 +2,7 @@
     background-image: url("../images/bg_header/hiring.png");     
 } 
  article li span .fa{
-	color: #222da5;
+	color: #8d1b3d;
     /* background: rgba(55, 125, 255, 0.1); */
     border-color: transparent;
     border-radius: 50%;
@@ -26,7 +26,7 @@
     font-size: 14px;
     border-radius: 0px;          
     padding: 1.4rem !important;
-    border-bottom: 1px solid #00b7fa;
+    border-bottom: 1px solid #8d1b3d;
 
        
 }
@@ -35,15 +35,15 @@
     margin:1rem;
 }
 .form-group textarea{
-    border: 1px solid #00b7fa;
+    border: 1px solid #8d1b3d;
 }
 .custom-file input{
-border: 1px solid #00b7fa !important;
+border: 1px solid #8d1b3d !important;
 padding: 1.4rem !important;
 }
 .form-group input:focus{
     border: none;     
-    border-bottom: 2px solid #00b7fa;          
+    border-bottom: 2px solid #8d1b3d;          
     -webkit-box-shadow: none;
     box-shadow: none;
 }

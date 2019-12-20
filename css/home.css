@@ -234,7 +234,7 @@ width: 100%;
 }
 /* === END - WELCOME SECTION === */
  .automation .caption{
-   color: #ff4500;
+   color: #8d1b3d;
  }
  .automation .img-box{
   display: flex;
@@ -299,7 +299,7 @@ background-color: hsl(211, 100%, 98.5%);
     -o-transition: all .1s ease-in-out;
 }
 .services .service .service-icon svg{
-  fill: hsl(211, 100%, 60%);
+  fill: hsl(342, 68%, 33%);
   transition: all .1s ease-in-out;
   -webkit-transition: all .1s ease-in-out;
   -moz-transition: all .1s ease-in-out;
@@ -307,7 +307,7 @@ background-color: hsl(211, 100%, 98.5%);
   -o-transition: all .1s ease-in-out;
 }
 .services .service:hover .service-icon svg{
-      fill:#ff4500;
+      fill:#256fa2;
       height: 70px;
       width: 70px;
       transition: all .1s ease-in-out;
@@ -322,11 +322,12 @@ background-color: hsl(211, 100%, 98.5%);
 }
 .service .btn-breach{
   border-color:transparent;
-  color:hsl(211, 100%, 70%);
+  color:hsl(342, 68%, 33%);
 }
 .service:hover .btn-breach{
-  color: hsl(16, 100%, 55%);
-  border-color:hsl(16, 100%, 70%);
+  color: hsl(342, 68%, 33%);
+  /* color: hsl(16, 100%, 55%); */
+  border-color:hsl(342, 68%, 33%);
 }
 
 /* ==== END - SERVICES ====*/
@@ -363,7 +364,7 @@ background-color: hsl(211, 100%, 98.5%);
   -o-transition: all .2s ease-in-out;
 }
  .industry-cards .card:hover .title-3{
-   color: #ff4500 !important;
+   color: hsl(342, 68%, 33%) !important;
  }
  
  .industry-cards .card .card-head{
@@ -396,14 +397,14 @@ background-color: hsl(211, 100%, 98.5%);
   align-items: center;
   height: 50px;
   width: 50px;
-  border:1px solid hsl(16, 100%, 90%);
+  border:1px solid hsl(342, 68%, 33%);
   margin: 5px;
   font-weight: 600;
   font-size: 1.5rem;
-  color: #ff4500;
+  color: hsl(342, 68%, 33%);
 }
 .industry-carousel .owl-next span:hover,.industry-carousel .owl-prev span:hover{
-  background-color: #ff4500;
+  background-color: hsl(342, 68%, 33%);
   color: #ffffff;
 }
 .industry-cards .card-body{  
@@ -480,7 +481,7 @@ background-color: hsl(211, 100%, 98.5%);
   line-height: 1.4;
 }
 .contact-banner .text-1{
-  color: #ff4500;
+  color: hsl(342, 68%, 33%);
   font-size: 2rem;   
 }
 .contact-banner a{
@@ -492,7 +493,8 @@ background-color: hsl(211, 100%, 98.5%);
 }
 .contact-banner .btn-outline-primary:hover{
 background-color: #ffffff;
-color: #ff4500;
+font-weight: 600;
+color: hsl(342, 68%, 33%);
 box-shadow: 0 0.5rem 1.125rem -0.5rem #ffffff;
 transform: translate(0,-2px);
 -webkit-transform: translate(0,-2px);
