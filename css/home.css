@@ -1,3 +1,4 @@
+
 /* 
  ==== HOME PAGE STYLES ====
  */
@@ -236,13 +237,19 @@ width: 100%;
  .automation .caption{
    color: #8d1b3d;
  }
- .automation .img-box{
+ .automation-inner .img-box,.blockchain-inner .img-box{
   display: flex;
   align-items: center;
+  justify-content: center;     
  }
- .automation img{
-width: 100%;
-max-width: 400px;
+ 
+ .automation-inner img{
+   width: 70%;
+   border-radius: 0.6rem;
+    
+ } 
+ .blockchain-inner img{
+  width: 90%;   
  }
  
 /* ==== SERVICES ==== */
@@ -502,8 +509,33 @@ transform: translate(0,-2px);
 -ms-transform: translate(0,-2px);
 -o-transform: translate(0,-2px);
 }
-
+@media (max-width: 992px) {
+  .automation-inner img{
+    width: 50%;        
+  } 
+  .blockchain-inner img{
+    width: 50%;   
+   }
+  .blockchain-inner .content-box{
+    order: 1;
+   }
+   .blockchain-inner .img-box{
+    order: 2;
+   }
+  #homeCarousel .carousel-caption h5{
+    font-size: 1.5rem;      
+    }
+    .slide-image:before{
+      display: none;
+    }
+}
 @media (max-width: 575.98px) { 
+  .automation-inner img{
+    width: 40%;        
+  } 
+  .blockchain-inner img{
+    width: 50%;   
+   }      
   .industry-carousel .owl-nav{
     margin: 0;
   }
@@ -554,11 +586,4 @@ transform: translate(0,-2px);
  }
 }
 
-@media (max-width: 992px) {
-  #homeCarousel .carousel-caption h5{
-    font-size: 1.5rem;      
-    }
-    .slide-image:before{
-      display: none;
-    }
-}
+
