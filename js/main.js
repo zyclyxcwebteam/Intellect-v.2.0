@@ -91,17 +91,17 @@ sectionOneObserver.observe(homeContainer);
 // END - NAVBAR BACKGROUND COLOR TOGGLE ON SCROLL
 
 // DISABLE COPY PASTE AND RIGHT CLICK
-//Disable cut copy paste
-//Disable mouse right click
-// $(document).ready(function () {
-//   $('body').bind('cut copy paste', function (e) {
-//     e.preventDefault();
-//   });
+// Disable cut copy paste
+// Disable mouse right click
+$(document).ready(function () {
+  $('body').bind('cut copy paste', function (e) {
+    e.preventDefault();
+  });
 
-//   $("body").on("contextmenu", function (e) {
-//     return false;
-//   });
-// });
+  $("body").on("contextmenu", function (e) {
+    return false;
+  });
+});
 // END - DISABLE COPY PASTE AND RIGHT CLICK
 
 // FOOTER - COPY RIGHT YEAR
