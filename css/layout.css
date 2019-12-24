@@ -854,8 +854,8 @@ color: #8d1b3d;
   z-index: 99; 
 }
 .bot:hover{
-  border: 2px solid hsl(211, 100%, 50%);
-  background: hsl(211, 100%, 50%);
+  border: 2px solid hsl(342, 68%, 23%);
+  background:hsl(342, 68%, 23%);
   color: #ffffff;
 }
 .chat-bot .reply-messages{

@@ -9,7 +9,7 @@ function show(x) {
 let sessionID = null;
 
 function getNewSession(){
-  fetch('https://stark-crag-70246.herokuapp.com/session') 
+  fetch('https://pacific-taiga-36420.herokuapp.com/session') 
   .then(function(session){
     return session.json();
   })
@@ -42,7 +42,7 @@ document
   document.getElementById("userText").value = "";
 
 
-  fetch("https://stark-crag-70246.herokuapp.com/zyclyx", {
+  fetch("https://pacific-taiga-36420.herokuapp.com/intellect", {
     method: "post",
     headers: {
       "Content-type": "application/json"
