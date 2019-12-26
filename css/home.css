@@ -1,10 +1,9 @@
-
+:root{
+  --indicator-position:0%;
+}
 /* 
  ==== HOME PAGE STYLES ====
- */
- :root{
-   --indicator-position:0%;
- }
+ */  
  body{
   scroll-behavior: smooth;
  }
@@ -255,9 +254,8 @@ width: 100%;
 /* ==== SERVICES ==== */
 .services-wrapper{ 
 padding-top: 3rem;  
-padding-bottom: 3rem;  
-background-color: hsl(211, 100%, 98.5%);
- 
+padding-bottom: 3rem;   
+background-color: hsl(342, 68%, 99.2%);
 } 
 .services .card{
   border: none;   
@@ -341,7 +339,7 @@ background-color: hsl(211, 100%, 98.5%);
  
  /* === INDUSTRIES === */
  .industries{
-   background-color: hsl(0, 0%, 97%);
+   background-color:#ffffff !important;   
  }
  .industry-cards .card img{
   height: 150px;

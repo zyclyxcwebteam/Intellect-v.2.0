@@ -24,11 +24,7 @@
     color: #0087FF;
 } */
 .form-container{
-    background-color: #f3f7fa;
-}
-
-.joinus-banner{ 
-    background-color: #f3f7fa;
+    background-color: hsl(342, 68%, 99.2%);
 }
  
 
@@ -42,6 +38,10 @@
     border-radius: 0px;
     border-bottom: 1px solid #ccc;
     outline: none !important;
+    background-color: hsl(342, 68%, 99.2%);     
+}
+.form-group input{
+    background-color: hsl(342, 68%, 99.2%);
 }
 .form-group input:focus{
     border: none;

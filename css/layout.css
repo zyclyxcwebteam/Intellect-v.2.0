@@ -374,14 +374,18 @@ body {
     height: auto;         
   }
   .dropdown-menu{
-    margin-top: 0; 
-    padding-top: 10px;   
-    border-radius: 0 !important;        
-    background-color:#f4f4f4;  
+    margin-top: 0;
+    padding-top: 10px;
+    border-radius: 0 !important;
+    background-color:#f4f4f4;
     min-width: 240px;
-    padding-left: 1rem;    
-    animation-duration: 300ms !important;  
-  }
+    padding-left: 1rem;
+    animation-duration: 300ms !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+}
   .dropdown-menu .dropdown-item{           
     color:#232934;     
     font-size: 1rem !important;
@@ -531,7 +535,7 @@ background-color: #8d1b3d;
 margin-right: 10px; 
 }
 .capabilities{
-background-color:#f3f7fa; 
+  background-color: hsl(342, 68%, 99.2%);
 }
  
 .service-card .title-1,.capability-card .title-1{
@@ -584,7 +588,7 @@ background-color:#f3f7fa;
   border: 1px solid rgba(108, 123, 255, 0.3);
 }
 .contact-banner{
-  background-color: #f3f7fa;
+  background-color: hsl(342, 68%, 99.2%);
 }
 /* 
 ==== END - Inner Page Layout styles ====
@@ -613,7 +617,7 @@ background-color:#f3f7fa;
   text-decoration: none;
 }
 .f-link a:hover{
-color: #8d1b3d; 
+color: hsl(342, 68%, 63%); 
 }
 .f-link a:hover .fas,.f-link a:hover .far{
   color:var(--color);
@@ -630,7 +634,7 @@ color: #8d1b3d;
   width: 0;
   height: 2px;
   margin-top: 5px;
-  background:var(--color);
+  background:hsl(342, 68%, 63%);
   transition: width .3s;
 }
 .f-link a:hover::after {

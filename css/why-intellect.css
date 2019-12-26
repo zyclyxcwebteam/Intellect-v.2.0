@@ -21,7 +21,7 @@ border: none !important;
 }
 /* we are great at section */
 .great-at-section {
-    background-color: #f3f7fa;
+  background-color: hsl(342, 68%, 99.2%);
   }
   .great-at-cards .card {
     border: none;
@@ -41,10 +41,7 @@ border: none !important;
 /* 
   ==== CORE VALUES ====
   */
-  .core-values {            
-    background-color: #f4f7f9;  
-  }
-   
+ 
   .core-values-items img {
     width: 40px;
     height: auto;
