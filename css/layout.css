@@ -984,3 +984,32 @@ body {
 #wrapper > div {
   display: inline-block;
 }
+
+/* services innerpage styles */
+.app-header {
+  background-image: url("../images/bg_header/application_development.jpg");
+  background-position: bottom;
+}
+.ai-header {
+  background-image: url("../images/bg_header/ai.jpg");
+}
+.bigdata-header {
+  background-image: url("../images/bg_header/big-data.jpg");
+}
+.blockchain-header {
+  background-image: url("../images/bg_header/blockchain.jpg");
+  background-position: center;
+}
+.cyber-header {
+  background-image: url("../images/bg_header/cyber_security.jpg");
+}
+.digital-header {
+  background-image: url("../images/bg_header/digital-marketing.jpg");
+  background-position: top;
+}
+.iot-header {
+  background-image: url("../images/bg_header/iot.jpg");
+}
+.rpa-header {
+  background-image: url("../images/bg_header/rpa.jpg");
+}
