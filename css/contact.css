@@ -73,3 +73,7 @@
 #contactAlert.show {
   display: block;
 }
+#errorAlert {
+  color: red;
+  font-size: 10px;
+}
