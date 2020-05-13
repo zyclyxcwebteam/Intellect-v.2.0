@@ -1013,3 +1013,17 @@ body {
 .rpa-header {
   background-image: url("../images/bg_header/rpa.jpg");
 }
+
+/* country code flags */
+.iti__flag {
+  background-image: url("../images/flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("../images/flags@2x.png");
+  }
+}
+.iti {
+  width: 100%;
+}
