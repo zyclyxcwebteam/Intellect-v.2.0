@@ -196,7 +196,7 @@
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url("../images/wait.svg") center no-repeat #fff;
+  background: url("../img/wait.svg") center no-repeat #fff;
 }
 
 html,
@@ -354,10 +354,10 @@ body {
   outline: none;
 }
 .navbar button[aria-expanded="false"] .menu-icon {
-  background-image: url("../images/icons/menu.svg");
+  background-image: url("../img/icons/menu.svg");
 }
 .navbar button[aria-expanded="true"] .menu-icon {
-  background-image: url("../images/icons/x.svg");
+  background-image: url("../img/icons/x.svg");
 }
 .navbar-light {
   background-color: rgba(244, 244, 244, 0.9);
@@ -987,41 +987,41 @@ body {
 
 /* services innerpage styles */
 .app-header {
-  background-image: url("../images/bg_header/application_development.jpg");
+  background-image: url("../img/bg_header/application_development.jpg");
   background-position: bottom;
 }
 .ai-header {
-  background-image: url("../images/bg_header/ai.jpg");
+  background-image: url("../img/bg_header/ai.jpg");
 }
 .bigdata-header {
-  background-image: url("../images/bg_header/big-data.jpg");
+  background-image: url("../img/bg_header/big-data.jpg");
 }
 .blockchain-header {
-  background-image: url("../images/bg_header/blockchain.jpg");
+  background-image: url("../img/bg_header/blockchain.jpg");
   background-position: center;
 }
 .cyber-header {
-  background-image: url("../images/bg_header/cyber_security.jpg");
+  background-image: url("../img/bg_header/cyber_security.jpg");
 }
 .digital-header {
-  background-image: url("../images/bg_header/digital-marketing.jpg");
+  background-image: url("../img/bg_header/digital-marketing.jpg");
   background-position: top;
 }
 .iot-header {
-  background-image: url("../images/bg_header/iot.jpg");
+  background-image: url("../img/bg_header/iot.jpg");
 }
 .rpa-header {
-  background-image: url("../images/bg_header/rpa.jpg");
+  background-image: url("../img/bg_header/rpa.jpg");
 }
 
 /* country code flags */
 .iti__flag {
-  background-image: url("../images/flags.png");
+  background-image: url("../img/flags.png");
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .iti__flag {
-    background-image: url("../images/flags@2x.png");
+    background-image: url("../img/flags@2x.png");
   }
 }
 .iti {
