@@ -237,28 +237,27 @@
                     </li>
                     <li class="list-group-item">
                       <div class="d-flex justify-content-between capitalize">
-                        <span>Job Type</span>
+                        <span>Experience</span>
                         <span
-                          id="jobtype"
-                          class="font-weight-bolder text-capitalize"
-                          >Fulltime</span
-                        >
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex justify-content-between capitalize">
-                        <span>Date Posted</span>
-                        <span
-                          id="startDate"
+                          id="experience"
                           class="font-weight-bolder text-capitalize"
                         ></span>
                       </div>
                     </li>
                     <li class="list-group-item">
                       <div class="d-flex justify-content-between capitalize">
-                        <div>Salary</div>
+                        <span>salary</span>
                         <span
                           id="salary"
+                          class="font-weight-bolder text-capitalize"
+                        ></span>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="d-flex justify-content-between capitalize">
+                        <div>Job Type</div>
+                        <span
+                          id="jobType"
                           class="font-weight-bolder text-capitalize"
                         ></span>
                       </div>
@@ -590,14 +589,12 @@
     <!-- build:js js/job-preview.min.js -->
     <script src="./js/vendor/aos.js"></script>
     <script src="./js/chatBot.js"></script>
-    <script src="./js/jobpreview.js"></script>
     <script src="./js/plugins.js"></script>
     <script src="./js/intlTelInput.min.js"></script>
     <script src="./js/utils.js"></script>
+    <script src="./js/jobpreview.js"></script>
     <!-- endbuild -->
-
     <script>
-      //   International telephone country code
       var input = document.querySelector("#phone");
       var iti = window.intlTelInput(input, {
         initialCountry: "auto",
@@ -612,15 +609,6 @@
           );
         },
         utilsScript: "./js/utils.js",
-      });
-
-      $("#resume").on("change", function () {
-        //get the file name
-        var fileName = $(this).val();
-        //replace the "Choose a file" label
-        $(this)
-          .next(".custom-file-label")
-          .html(fileName.replace("C:\\fakepath\\", " "));
       });
     </script>
   </body>

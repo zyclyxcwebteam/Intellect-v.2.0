@@ -1,91 +1,67 @@
 (function () {
-  /*
+  // add file name to the label in input file field
+  $("#resume").on("change", function () {
+    //get the file name
+    var fileName = $(this).val();
+    //replace the "Choose a file" label
+    $(this)
+      .next(".custom-file-label")
+      .html(fileName.replace("C:\\fakepath\\", " "));
+  });
 
-UPDATE JOB DESCRIPTION PAGE CONTENT
-
-*/
-  let months = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "June",
-    "July",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-  ];
   let urlParams = new URLSearchParams(window.location.search);
   let id = urlParams.get("id");
-  let title = "";
+  let jobTitle = "";
 
   let responsibilitiesElement = document.getElementById("responsibilities");
 
-  let jobtitle = document.getElementById("jobtitle");
+  // DOM Elements to update job details
+  let titleElement = document.getElementById("jobtitle");
   let description = document.getElementById("description");
   let minqualifications = document.getElementById("qualifications");
   let location = document.getElementById("location");
-  let startDate = document.getElementById("startDate");
+  let experience = document.getElementById("experience");
   let salary = document.getElementById("salary");
-  let jobtype = document.getElementById("jobtype");
+  let jobType = document.getElementById("jobType");
 
   fetch(`https://agile-plateau-09650.herokuapp.com/jobopenings/${id}`)
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
-      //title = data.title
-
       //minimum qualifications
-      let qualifyhtml = "";
+      let qualificationsHTML = "";
       if (data.requirements) {
         for (let qalify in data.requirements) {
-          qualifyhtml += `<li>
-    <span><i class="fa fa-check rounded-circle p-1"></i></span>
-    <p>${data.requirements[qalify]}</p>
-    </li>`;
+          qualificationsHTML += `<li>
+                            <span><i class="fa fa-check rounded-circle p-1"></i></span>
+                            <p>${data.requirements[qalify]}</p>
+                          </li>`;
         }
       }
-      minqualifications.innerHTML = qualifyhtml;
+      minqualifications.innerHTML = qualificationsHTML;
 
       //job description
-
       description.textContent = data.description;
-
-      jobtitle.textContent = data.title;
-      title = data.title;
+      titleElement.textContent = data.title;
+      jobTitle = data.title;
       // responsibilities
-      let resHtml = "";
+      let responsibilitiesHTML = "";
       if (data.requirements) {
         for (let res in data.requirements) {
-          resHtml += `<li>
-    <span><i class="fa fa-check rounded-circle p-1"></i></span>
-    <p>${data.requirements[res]}</p>
-  </li>`;
+          responsibilitiesHTML += `<li>
+                                    <span><i class="fa fa-check rounded-circle p-1"></i></span>
+                                     <p>${data.requirements[res]}</p>
+                                   </li>`;
         }
       }
-      responsibilitiesElement.innerHTML = resHtml;
+      responsibilitiesElement.innerHTML = responsibilitiesHTML;
 
       //job details
       location.textContent = data.location;
-      let date1 = new Date(data.createdAt);
-      let startDateString = `${date1.getDate()} ${
-        months[date1.getMonth()]
-      } ${date1.getFullYear()}`;
-
-      // let date2 = new Date(data.dateposted);
-
-      let date2 = new Date(data.lastdate);
-      let closeDateString = `${date2.getDate()} ${
-        months[date2.getMonth()]
-      } ${date2.getFullYear()}`;
-
-      startDate.textContent = startDateString;
+      experience.textContent = "-";
       salary.textContent = "Best in Industry";
-      jobtype.textContent = "Fulltime";
+      jobType.textContent = "Full-Time";
     });
 
   /* 
